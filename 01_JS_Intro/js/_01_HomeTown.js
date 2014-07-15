@@ -1,0 +1,3 @@
+function alertTown() {
+	alert("Sofia");
+}

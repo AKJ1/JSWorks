@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Titled</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body onload="reset()">
+        <div class="maincontain">
+            <div>
+                <h4 class="first">Task 1: HomeTown</h4>
+                <button onclick="alertTown()">MyTown</button>
+            </div>
+            <div>
+                <h4>Task 2: From 1 to 10</h4>
+                <button onclick="oneToTen()">One to Ten</button>
+            </div>
+            <div>
+                <h4>Task 3: Get Time</h4>
+                <button onclick="printHours()">Get my Time!</button>
+            </div>
+            <div>
+                <h4>Task 4: Calculate Area</h4>
+	            <input type="text" id="inputCircle" placeholder="3.14159265359">
+	            <br>
+	            <button onclick="calculateArea()">Calculate my Circle!</button>
+            </div>
+            <div>
+                <h4>Task 5: Hexadecimal</h4>
+                <button onclick="HexaDecimal()">Turn Something to Hex!</button>
+            </div>
+            <div>
+            	<h4>Task 6**: Tic-Tac-Toe
+            	</h4>
+            		<div id="gamefield">
+            			<table id="game">
+            				<tr>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box1"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box2"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box3"></td>
+            				</tr>
+            				<tr>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box4"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box5"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box6"></td>
+            				</tr>
+            		 		<tr>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box7"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box8"></td>
+            					<td onclick="changeVal(this)" onmouseout="restoreBox(this)" onmouseover="drawPlayerHover(this)" id="box9"></td>
+            				</tr>
+            				<tr>
+            					<th class="shake-hard" onclick="reset()" id="result" colspan="3"></th>
+            				</tr>
+            			</table>
+            		</div>
+            </div>
+            <div id="canvasdiv">
+            	<h4>Task 7***: Falling Rocks Game</h4>
+            	<canvas id="VideoGame" onclick="gameInit(this)"  width="512px" height="650px"></canvas>
+            </div>
+        </div>
+        <script src="js/_01_HomeTown.js"></script>
+        <script src="js/_02_OneToTen.js"></script>
+        <script src="js/_03_CurrentTime.js"></script>
+        <script src="js/_04_CircleArea.js"></script>
+        <script src="js/_05_Dec2Hex.js"></script>
+        <script src="js/_06_TicTacToe.js"></script>
+        <script src="js/_07_FallingRocks.js"></script>
+    </body>
+</html>
