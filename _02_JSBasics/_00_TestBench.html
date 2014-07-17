@@ -9,69 +9,148 @@
         <link rel="author" href="humans.txt">
     </head>
     <body>
-        
+        <div class="bodyclass">
         <div class="maincontain">
             <div>
                 <h4 class="first">Task 1: Powerful Cars</h4>
-                <form onsubmit="getKiloWatts(watts)">
-                	<input type="text" placeholder="1.21 Jigawatts" name="watts">
-	                <button onclick="getKiloWatts(watts)" type="button">Kill a watt</button>
-	                <p id="result1"></p>
+                <form onsubmit="#">
+                    <input type="text" placeholder="1.21 Jigawatts" name="watts">
+                    <button onclick="getKiloWatts(watts)" type="button">Kill a watt</button>
+                    <p id="result1"></p>
                 </form>
             </div>
             <div>
                 <h4>Task 2: Simple Calculation</h4>
-                <form action="simpleMath(number)">
-                	<input type="text" placeholder="6.2831...." name="simple">
-	                <button onclick="simpleMath(simple)" type="button">Simply Calculate</button>
-	                <p id="result2"></p>
+                <form action="#">
+                    <input type="text" placeholder="6.2831...." name="simple">
+                    <button onclick="simpleMath(simple)" type="button">Simply Calculate</button>
+                    <p id="result2"></p>
                 </form>
             </div>
             <div>
                 <h4>Task 3: Check If Even</h4>
-                <form action="Check(argument)">
-                	<input type="text" placeholder="Integer" name="Checkem">
-	                <button onclick="Check(Checkem)" type="button">Check 'em</button>
-	                <p id="result3"></p>
+                <form action="#">
+                    <input type="text" placeholder="Integer" name="Checkem">
+                    <button onclick="Check(Checkem)" type="button">Check 'em</button>
+                    <p id="result3"></p>
                 </form>
             </div>
             <div>
                 <h4>Task 4: Check if Prime</h4>
-		         <form action="checkPrime(args)">
-                	<input type="text" placeholder="Se7en" name="args">
-	                <button onclick="checkPrime(args)" type="button">Check it.</button>
-	                <p id="result4"></p>
+                <form action="#" onenter="#">
+                    <input type="text" placeholder="Se7en" name="args">
+                    <button onclick="checkPrime(args)" type="button">Check it.</button>
+                    <p id="result4"></p>
                 </form>
             </div>
             <div>
-            	<h4>Task 5: Divide by Three</h4>
-         	   	<form action="Division(victim)">
-                	<input type="text" placeholder="Integer" name="victim">
-	                <button onclick="submit" type="submit">Divide & Conquer</button>
+                <h4>Task 5: Divide by Three</h4>
+                <form action="#" onenter="#">
+                    <input type="text" placeholder="Integer" name="victim">
+                    <button onclick="Division(victim)" type="button">Divide & Conquer</button>
+                    <p id="result5"></p>
                 </form>
             </div>
             <div>
-         	   <form action="Division(victim)">
-                	<input type="text" placeholder="Integer" name="victim">
-	                <button onclick="submit" type="submit">Divide & Conquer</button>
+                <h4>Task 6: Bit Checker</h4>
+                <form action="#">
+                    <input placeholder="Decimal" type="text" name="bit">
+                    <button onclick="bitChecker(bit)" type="button">Does it Bit?</button>
+                    <p id="result6"></p>
                 </form>
             </div>
-
-        <div>
-			<script src="js/_01_PowerfulCars.js"></script>
-			<script src="js/_02_SimpleCalculation.js"></script>
-			<script src="js/_03_CheckIfEven.js"></script>
-			<script src="js/_04_CheckIfPrime.js"></script>
-			<script src="js/_05_DivideByThree.js"></script>
-			<script src="js/_06_BitChecker.js"></script>
-			<script src="js/_07_LifetimeSupplyCalculator.js"></script>
-			<script src="js/_08_CalculateCyllinder.js"></script>
-			<script src="js/_09_TreeOrHouse.js"></script>
-			<script src="js/_10_CheckDigitValue.js"></script>
-			<script src="js/_11_DigitAsWord.js"></script>
-			<script src="js/_12_Variables.js"></script>
-			<script src="js/_13_Soothsayer.js"></script>
-			<script src="js/_14_CalculateExpression.js"></script>
-		</div>
-    </body>
-</html>
+            <div>
+                <h4>Task 7: Lifetime Supply</h4>
+                <form action="#">
+                    <input type="text" name="food" placeholder="Food Type">
+                    <input type="text" name="amount" placeholder="Consumption (in KG)">
+                    <input type="text" name="maxAge" placeholder="Desired Age">
+                    <input type="text" name="currentAge" placeholder="Your age">
+                    <button onclick="calcSupply(maxAge, currentAge, amount, food)" type="button">Feed Me</button>
+                    <p id="result7"></p>
+                </form>
+            </div>
+            <div>
+                <h4>Task 8: Calculate Cyllinder</h4>
+                <form action="#">
+                    <input type="text" name="height" placeholder=" Height">
+                    <input type="text" name="radius"placeholder=" Radius">
+                    <button type="button" onclick="CalcCyl(radius, height)">Calculate!</button>
+                    <p id="result8"></p>
+                </form>
+            </div>
+            <div>
+            <h4>Task 9: Tree Or House</h4>
+                <form action="#">
+                    <input type="text" name="tree" placeholder="Tree">
+                    <input type="text" name="house" placeholder="House">
+                    <button onclick="treeHouseCompare(tree, house)" type="button"> Which One?</button>
+                </form>
+                <p id="result9"></p>
+            </div>
+            <div>
+            <h4>Task 10: Digit Checker</h4>
+                <form action="#">
+                    <input placeholder="1 to 10" type="text" name="val2check">
+                    <button type="button" onclick="checkDigit(val2check)"> Is it 3? </button>
+                    <p id="result10"></p>
+                </form>
+            </div>
+            <div>
+                <h4>Task 11: Digit to Words</h4>
+                <form action="">
+                    <input type="text" name="wordifier" placeholder="Digit">
+                    <button type="button" onclick="wordify(wordifier)">Wordify.</button>
+                    <p id="result11"></p>
+                </form>
+            </div>
+            <div>
+                <h4>Task 12: Variables</h4>
+                <form action="#">
+                    <input type="text" name="naem" placeholder="Your Name">
+                    <input type="text" name="age" placeholder="Age">
+                    <input type="checkbox" id="isMale">
+                    <input type="text" name="favFoods" placeholder="Lasagnia Oranges Apples">
+                    <button type="button" onclick="variables(naem, age, favFoods)">Who Am I?</button>
+                    <p id="result12"></p>
+                </form>
+            </div>
+            <div>
+            <h4>Task 13* : Soothsayer</h4>
+            <h6>Seperate With Spaces</h6>
+                <form action="">
+                    <input type="text" name="ages" placeholder="Ages">
+                    <input type="text" name="langs" placeholder="Languages">
+                    <input type="text" name="locs" placeholder="Places">
+                    <input type="text" name="cars" placeholder="Cars">
+                    <button type="button", onclick="soothsayerHTML(ages, langs, locs, cars)">Soothe me.</button>
+                    <p id="result13"></p>
+                </form>
+            </div>
+            <div>
+                <h4>Task14* : Calculate Expression</h4>
+                <form action="">
+                    <input type="text" name="calculator" placeholder="f(x) = a0 + a1x + a2x2">
+                    <button type="button" onclick="calculate(calculator)">Eval!</button>
+                    <p id="result14"></p>
+                </form>
+            </div>
+            <div>
+                <script src="js/_01_PowerfulCars.js"></script>
+                <script src="js/_02_SimpleCalculation.js"></script>
+                <script src="js/_03_CheckIfEven.js"></script>
+                <script src="js/_04_CheckIfPrime.js"></script>
+                <script src="js/_05_DivideByThree.js"></script>
+                <script src="js/_06_BitChecker.js"></script>
+                <script src="js/_07_LifetimeSupplyCalculator.js"></script>
+                <script src="js/_08_CalculateCyllinder.js"></script>
+                <script src="js/_09_TreeOrHouse.js"></script>
+                <script src="js/_10_CheckDigitValue.js"></script>
+                <script src="js/_11_DigitAsWord.js"></script>
+                <script src="js/_12_Variables.js"></script>
+                <script src="js/_13_Soothsayer.js"></script>
+                <script src="js/_14_CalculateExpression.js"></script>
+            </div>
+            </div>
+        </body>
+    </html>

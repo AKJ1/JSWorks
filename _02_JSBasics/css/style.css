@@ -1,0 +1,70 @@
+@font-face{
+	font-family: Sketchwell;
+	src: url("../font/SketchRockwell-Bold.ttf");
+}
+.bodyclass *{
+	font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Verdana, Tahoma;
+
+}
+body{
+	margin: 0px;
+}
+.bodyclass{
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	background-color: #38657F;
+	box-shadow: 0px 0px 20px #888888;
+}
+.maincontain{
+	margin: 50px;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px,0px, 3px, 5px;
+}
+.first{
+	margin-top: 0px;
+}
+input, button{
+	display: block;
+
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	border: none;	
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 20px;
+}
+button, h6{
+	background: none;
+	color: white;
+}
+p{
+	font-size: 25px;
+	margin: 5px;
+}
+button:hover{
+	background-color: #2fa;
+	color: black;
+	border: 1px solid black;
+
+}
+h4, input, button, p, h6{
+	text-align: center;
+}
+h4{
+	margin-bottom: 10px;
+}
+.bodyclass h4{
+	font-family: Sketchwell,"Rockwell-Sketch", "Segoe UI", "Lucida Grande", Helvetica, Verdana, Tahoma;
+	font-size: 48px;
+	color: white;
+}
+div{
+
+	margin-bottom: 100px;
+}

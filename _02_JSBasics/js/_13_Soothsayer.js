@@ -7,3 +7,16 @@ function soothsayer(input) {
     console.log("You will work " + years + " years on " + language + ".");
     console.log("You will live in " + location + " and drive " + car + ".");
 }
+function soothsayerHTML(years, languages, places, carbrands){
+	var carbrandsArray = carbrands.value.split(" ");
+	var placesArray = places.value.split(" ");
+	var langArray = languages.value.split(" ");
+	var yearArray = years.value.split(" ");
+
+	var year = yearArray[Math.floor(Math.random() * yearArray.length) ];
+    var language = langArray[Math.floor(Math.random() * langArray.length) ];
+    var location = placesArray[Math.floor(Math.random() * placesArray.length) ];
+    var car = carbrandsArray[Math.floor(Math.random() * carbrandsArray.length)];
+
+    document.getElementById("result13").innerHTML = "You will work " + year + " years on " + language + "<br>You will live in " + location + " and drive an " + car;
+}

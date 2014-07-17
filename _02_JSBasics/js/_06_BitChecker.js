@@ -1,8 +1,14 @@
 function bitChecker(input) {
-    var bin = i.toString(2);
+    var bin = Number(input.value).toString(2);
     var result = false;
-    if (bin[2] == 1) {
+    console.log(bin);
+    if (bin[bin.length-3] == '1') {
         result = true;
+        document.getElementById("result6").innerHTML = "Yes, it does.";
+    
+    }
+    else{
+    	document.getElementById("result6").innerHTML = "Nope.";
     }
     console.log(result);
 }
