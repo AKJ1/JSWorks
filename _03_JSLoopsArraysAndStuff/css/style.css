@@ -1,0 +1,47 @@
+#maincontain{
+	width: 970px;
+	background-color: #252525;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h4{
+	font-size: 32px;
+	color: white;
+}
+
+input{
+	border: none;
+	margin: 30px;
+	color: black;
+	
+	font-size: 22px;
+}
+input, p, button ,h4{
+	width: 66%;
+	text-align: center;
+	font-family: "SegoeUI", "Helvetica neue", helvetica, verdana, arial, tahoma, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+p{
+	font-size: 20px;
+	color: #bbb;
+}
+button{
+	font-size: 22px;
+	background: #Af0000;
+	color: #000;
+	border: none;
+}
+button:hover{
+	background: black;
+	color: #ddd;
+	broder: none;
+}

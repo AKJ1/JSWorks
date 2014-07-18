@@ -8,6 +8,9 @@ function CheckBrackets(input) {
     } else {
         result = true;
     }
+    if (inp.indexOf(")") < inp.indexOf("(")) {
+        result =false;
+    }
     if (result) {
         document.getElementById("result11").innerHTML = "Correct!";
 
