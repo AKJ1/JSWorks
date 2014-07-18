@@ -101,3 +101,6 @@ function Rock() {
     	obj.speed = null;
     };
 }
+function ControlBank(){
+	
+}
