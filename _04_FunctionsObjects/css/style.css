@@ -1,0 +1,59 @@
+body{
+	background-color: #121212;
+}
+#maincontain{
+	width: 970px;
+	background-color: #252530;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h4{
+	font-size: 32px;
+	color: white;
+}
+
+input{
+	border: none;
+	margin: 30px;
+	color: black;
+	
+	font-size: 22px;
+}
+#maincontain div{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	box-sizing: border-box;
+	display: block;
+}
+input, p, button ,h4{
+	border-radius: 5px;
+	width: 100%;
+	text-align: center;
+	font-family: "SegoeUI", "Helvetica neue", helvetica, verdana, arial, tahoma, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+p{
+	font-size: 20px;
+	color: #bbb;
+}
+button{
+	font-size: 22px;
+	background: #FFDE00;
+	color: #000;
+	border: none;
+}
+button:hover{
+	background: black;
+	color: #ddd;
+	broder: none;
+}
