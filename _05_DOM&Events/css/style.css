@@ -1,0 +1,38 @@
+body{
+	background-color: #181818;
+}
+#maincontain{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	color:white;
+	font-family: Helvetica, Verdana, Tahoma, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+}
+button:hover{
+	background-color: black;
+}
+button, input{
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #333340;
+	color: white;
+	border: 2px solid black;
+		font-family: "Segoe UI", Helvetica, Verdana, Tahoma, sans-serif;
+	font-size: 30px;
+	margin-bottom: 40px;
+
+}
+h4{
+	font-size: 1.25em;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+h4,table,table *, input, button,p, #container{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center
+}

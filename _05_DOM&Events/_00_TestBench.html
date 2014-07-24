@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TestedBench</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+		<div id="maincontain">
+			<div>
+				<h4>Problem 1. Like/Unlike Button</h4>
+				<button onclick="changeLike(this)">Like!</button>
+			</div>
+			<div>
+				<h4>Problem 2. Display Div Content</h4>
+						<div id="container">	
+							<div>stuff 0</div>
+							<div>stuff 1 <div>innerStuff 0	</div></div>
+							<div>stuff 2</div>
+							<div>stuff 3</div>
+						</div>
+					<button type="button" onclick="displayDivContent()">Get Div Content</button>
+					<p id="result2"></p>
+				</form>
+			</div>
+			<div>
+			<h4>Problem 3. Hide Odd Rows</h4>
+				<table>
+					<tr>
+						<td>row1</td>
+					</tr>
+					<tr>
+						<td>row2</td>
+					</tr>
+					<tr>
+						<td>row3</td>
+					</tr>
+					<tr>
+						<td>row4</td>
+					</tr>
+					<tr>
+						<td>row5</td>
+					</tr>
+				</table>
+				<button onclick="HideRows()">Hide Odd Rows</button>
+			</div>
+			<div>
+				<h4>Problem 4. Numbers Only Field</h4>
+				<input onkeypress="doCheck(this)" type="text" id="numbersOnly">
+			</div>
+			<div>
+				<h4>Problem 5.Print Mouse Coordinates</h4>
+				<p id="mouse"></p>
+			</div>
+
+		</div>
+
+
+        <script src="js/_00_.js"></script>
+        <script src="js/_01_.js"></script>
+        <script src="js/_02_.js"></script>
+        <script src="js/_03_.js"></script>
+        <script src="js/_04_.js"></script>
+        <script src="js/_05_.js"></script>
+    </body>
+</html>
